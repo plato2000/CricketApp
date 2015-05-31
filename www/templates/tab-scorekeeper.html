@@ -1,0 +1,64 @@
+<ion-view view-title="Scorekeeper">
+  <ion-content class="padding">
+    <div class="row">
+      <!--<div class="col">
+        <p>Runs: <span id="totalRuns">34</span></p>
+      </div>
+      <div class="col">
+        <p>Wickets: <span id="totalWickets">2</span></p>
+      </div>-
+      <div class="col">
+        <p class="center">Overs: <span id="totalOvers">12.2</span></p>
+      </div>-->
+    </div>
+    <span class="center">
+      <h1 id="score">Score: 0-0</h1>
+    </span>
+    <span class="center">
+      <h3 id="extras">Extras: 0</h3>
+    </span>
+    <span class="center">
+      <h3 id="overs">Overs: 0.0</h3>
+    </span>
+    <div class="row">
+      <div class="col">
+        <div class="button-bar">
+          <a class="button" ng-class="{'button-positive': isActiveRuns('0')}" ng-click="setActiveRuns('0')">0</a>
+          <a class="button" ng-class="{'button-positive': isActiveRuns('1')}" ng-click="setActiveRuns('1')">1</a>
+          <a class="button" ng-class="{'button-positive': isActiveRuns('2')}" ng-click="setActiveRuns('2')">2</a>
+          <a class="button" ng-class="{'button-positive': isActiveRuns('3')}" ng-click="setActiveRuns('3')">3</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="button-bar">
+          <a class="button" ng-class="{'button-positive': isActiveRuns('4')}" ng-click="setActiveRuns('4')">4</a>
+          <a class="button" ng-class="{'button-positive': isActiveRuns('5')}" ng-click="setActiveRuns('5')">5</a>
+          <a class="button" ng-class="{'button-positive': isActiveRuns('6')}" ng-click="setActiveRuns('6')">6</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="button-bar">
+            <a class="button" ng-class="{'button-positive': isActiveBall('None')}" ng-click="setActiveBall('None')">None</a>
+            <a class="button" ng-class="{'button-positive': isActiveBall('N')}" ng-click="setActiveBall('N')">N</a>
+            <a class="button" ng-class="{'button-positive': isActiveBall('Y')}" ng-click="setActiveBall('Y')">Y</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="button-bar">
+            <a class="button" ng-class="{'button-positive': isActiveBall('.')}" ng-click="setActiveBall('.')">.</a>
+            <a class="button" ng-class="{'button-positive': isActiveBall('B')}" ng-click="setActiveBall('B')">B</a>
+            <a class="button" ng-class="{'button-positive': isActiveBall('Wicket')}" ng-click="setActiveBall('Wicket')">Wicket</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <button class="button button-block button-balanced" ng-click="submitRuns()">Submit</button>
+    </div>
+  </ion-content>
+</ion-view>
